@@ -106,7 +106,7 @@ const Profile: React.FC = () => {
         description: 'Ocorreu um erro ao fazer o cadastro. Tente novamente.',
       });
     }
-  }, [addToast, history]);
+  }, [addToast, history, updateUser]);
 
   const handleAvatarChange = useCallback(async (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
